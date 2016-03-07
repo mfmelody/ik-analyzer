@@ -40,19 +40,16 @@ import java.util.Properties;
 public class DefaultConfig implements Configuration{
 
 	/*
-	 * 分词器默认字典路径 
-	 */
-	private static final String PATH_DIC_MAIN = "org/wltea/analyzer/dic/main2012.dic";
-	private static final String PATH_DIC_QUANTIFIER = "org/wltea/analyzer/dic/quantifier.dic";
-
-	/*
 	 * 分词器配置文件路径
 	 */	
-	private static final String FILE_NAME = "IKAnalyzer.cfg.xml";
-	//配置属性——扩展字典
-	private static final String EXT_DICT = "ext_dict";
-	//配置属性——扩展停止词典
-	private static final String EXT_STOP = "ext_stopwords";
+	private static final String CONFIG_NAME = "IKAnalyzer.cfg.xml";
+	//配置属性——字典
+	private static final String DICT = "dict";
+	//配置属性——停止词典
+	private static final String STOP_DICT = "stopwords_dict";
+	
+	//配置属性-量词词典
+	private static final String QUANTIFIER_DICT = "quantifier_dict";
 	
 	private Properties props;
 	/*
@@ -74,7 +71,7 @@ public class DefaultConfig implements Configuration{
 	private DefaultConfig(){		
 		props = new Properties();
 		
-		InputStream input = this.getClass().getClassLoader().getResourceAsStream(FILE_NAME);
+		InputStream input = this.getClass().getClassLoader().getResourceAsStream(CONFIG_NAME);
 		if(input != null){
 			try {
 				props.loadFromXML(input);
@@ -106,41 +103,32 @@ public class DefaultConfig implements Configuration{
 	}	
 	
 	/**
-	 * 获取主词典路径
-	 * 
-	 * @return String 主词典路径
-	 */
-	public String getMainDictionary(){
-		return PATH_DIC_MAIN;
-	}
-
-	/**
 	 * 获取量词词典路径
 	 * @return String 量词词典路径
 	 */
 	public String getQuantifierDicionary(){
-		return PATH_DIC_QUANTIFIER;
+		return props.getProperty(QUANTIFIER_DICT).trim();
 	}
 
 	/**
 	 * 获取扩展字典配置路径
 	 * @return List<String> 相对类加载器的路径
 	 */
-	public List<String> getExtDictionarys(){
-		List<String> extDictFiles = new ArrayList<String>(2);
-		String extDictCfg = props.getProperty(EXT_DICT);
-		if(extDictCfg != null){
+	public List<String> getDictionarys(){
+		List<String> dictFiles = new ArrayList<String>();
+		String dictCfg = props.getProperty(DICT);
+		if(dictCfg != null){
 			//使用;分割多个扩展字典配置
-			String[] filePaths = extDictCfg.split(";");
+			String[] filePaths = dictCfg.split(";");
 			if(filePaths != null){
 				for(String filePath : filePaths){
 					if(filePath != null && !"".equals(filePath.trim())){
-						extDictFiles.add(filePath.trim());
+						dictFiles.add(filePath.trim());
 					}
 				}
 			}
 		}		
-		return extDictFiles;		
+		return dictFiles;		
 	}
 
 
@@ -148,21 +136,21 @@ public class DefaultConfig implements Configuration{
 	 * 获取扩展停止词典配置路径
 	 * @return List<String> 相对类加载器的路径
 	 */
-	public List<String> getExtStopWordDictionarys(){
-		List<String> extStopWordDictFiles = new ArrayList<String>(2);
-		String extStopWordDictCfg = props.getProperty(EXT_STOP);
-		if(extStopWordDictCfg != null){
+	public List<String> getStopWordDictionarys(){
+		List<String> StopWordDictFiles = new ArrayList<String>(2);
+		String StopWordDictCfg = props.getProperty(STOP_DICT);
+		if(StopWordDictCfg != null){
 			//使用;分割多个扩展字典配置
-			String[] filePaths = extStopWordDictCfg.split(";");
+			String[] filePaths = StopWordDictCfg.split(";");
 			if(filePaths != null){
 				for(String filePath : filePaths){
 					if(filePath != null && !"".equals(filePath.trim())){
-						extStopWordDictFiles.add(filePath.trim());
+						StopWordDictFiles.add(filePath.trim());
 					}
 				}
 			}
 		}		
-		return extStopWordDictFiles;		
+		return StopWordDictFiles;		
 	}
 			
 
