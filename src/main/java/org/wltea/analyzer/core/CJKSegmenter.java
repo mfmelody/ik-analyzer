@@ -61,7 +61,7 @@ class CJKSegmenter implements ISegmenter {
 					hit = Dictionary.getSingleton().matchWithHit(context.getSegmentBuff(), context.getCursor() , hit);
 					if(hit.isMatch()){
 						//输出当前的词
-						Lexeme newLexeme = new Lexeme(context.getBufferOffset() , hit.getBegin() , context.getCursor() - hit.getBegin() + 1 , Lexeme.TYPE_CNWORD);
+						Lexeme newLexeme = new Lexeme(context.getBufferOffset() , hit.getBegin() , context.getCursor() - hit.getBegin() + 1 , Lexeme.TYPE_CNWORD, Dictionary.getSingleton().getDictNameByHit(hit));
 						context.addLexeme(newLexeme);
 						
 						if(!hit.isPrefix()){//不是词前缀，hit不需要继续匹配，移除
@@ -81,7 +81,7 @@ class CJKSegmenter implements ISegmenter {
 				Hit singleCharHit = Dictionary.getSingleton().matchInDict(context.getSegmentBuff(), context.getCursor(), 1, i);
 				if(singleCharHit.isMatch()){//首字成词
 					//输出当前的词
-					Lexeme newLexeme = new Lexeme(context.getBufferOffset() , context.getCursor() , 1 , Lexeme.TYPE_CNWORD);
+					Lexeme newLexeme = new Lexeme(context.getBufferOffset() , context.getCursor() , 1 , Lexeme.TYPE_CNWORD, Dictionary.getSingleton().getDictNameByHit(singleCharHit));
 					context.addLexeme(newLexeme);
 
 					//同时也是词前缀

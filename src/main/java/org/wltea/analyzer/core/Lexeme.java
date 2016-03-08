@@ -61,6 +61,8 @@ public class Lexeme implements Comparable<Lexeme>{
     //词元类型
     private int lexemeType;
     
+    private String dictType = "";
+    
     
 	public Lexeme(int offset , int begin , int length , int lexemeType){
 		this.offset = offset;
@@ -70,6 +72,11 @@ public class Lexeme implements Comparable<Lexeme>{
 		}
 		this.length = length;
 		this.lexemeType = lexemeType;
+	}
+	
+	public Lexeme(int offset, int begin, int length, int lexemeType, String dictType) {
+		this(offset, begin, length, lexemeType);
+		this.dictType = dictType;
 	}
 	
     /*
@@ -213,37 +220,41 @@ public class Lexeme implements Comparable<Lexeme>{
 	 * @return String
 	 */
 	public String getLexemeTypeString(){
-		switch(lexemeType) {
+		if (!this.dictType.equals("")) {
+			return this.dictType;
+		} else {
+			switch(lexemeType) {
 
-		case TYPE_ENGLISH :
-			return "ENGLISH";
+				case TYPE_ENGLISH :
+					return "ENGLISH";
 			
-		case TYPE_ARABIC :
-			return "ARABIC";
+				case TYPE_ARABIC :
+					return "ARABIC";
 			
-		case TYPE_LETTER :
-			return "LETTER";
+				case TYPE_LETTER :
+					return "LETTER";
 			
-		case TYPE_CNWORD : 
-			return "CN_WORD";
+				case TYPE_CNWORD : 
+					return "CN_WORD";
 			
-		case TYPE_CNCHAR : 
-			return "CN_CHAR";
+				case TYPE_CNCHAR : 
+					return "CN_CHAR";
 			
-		case TYPE_OTHER_CJK :
-			return "OTHER_CJK";
+				case TYPE_OTHER_CJK :
+					return "OTHER_CJK";
 			
-		case TYPE_COUNT :
-			return "COUNT";
+				case TYPE_COUNT :
+					return "COUNT";
 			
-		case TYPE_CNUM :
-			return "TYPE_CNUM";
+				case TYPE_CNUM :
+					return "TYPE_CNUM";
 			
-		case TYPE_CQUAN:	
-			return "TYPE_CQUAN";
+				case TYPE_CQUAN:	
+					return "TYPE_CQUAN";
 			
-		default :
-			return "UNKONW";
+				default :
+					return "UNKONW";
+			}
 		}
 	}
 		
