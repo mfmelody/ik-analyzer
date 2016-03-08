@@ -137,7 +137,7 @@ public class DefaultConfig implements Configuration{
 	 * @return List<String> 相对类加载器的路径
 	 */
 	public List<String> getStopWordDictionarys(){
-		List<String> StopWordDictFiles = new ArrayList<String>(2);
+		List<String> StopWordDictFiles = new ArrayList<String>();
 		String StopWordDictCfg = props.getProperty(STOP_DICT);
 		if(StopWordDictCfg != null){
 			//使用;分割多个扩展字典配置
