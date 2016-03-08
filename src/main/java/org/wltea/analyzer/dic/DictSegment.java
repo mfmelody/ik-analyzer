@@ -48,6 +48,8 @@ class DictSegment implements Comparable<DictSegment>{
 	
 	//当前节点上存储的字符
 	private Character nodeChar;
+	//节点名
+	private String name;
 	//当前节点存储的Segment数目
 	//storeSize <=ARRAY_LENGTH_LIMIT ，使用数组存储， storeSize >ARRAY_LENGTH_LIMIT ,则使用Map存储
 	private int storeSize = 0;
@@ -55,15 +57,20 @@ class DictSegment implements Comparable<DictSegment>{
 	private int nodeState = 0;	
 	
 	
-	DictSegment(Character nodeChar){
+	DictSegment(Character nodeChar, String name){
 		if(nodeChar == null){
 			throw new IllegalArgumentException("参数为空异常，字符不能为空");
 		}
 		this.nodeChar = nodeChar;
+		this.name = name;
 	}
 
 	Character getNodeChar() {
 		return nodeChar;
+	}
+	
+	String getName() {
+		return name;
 	}
 	
 	/*
@@ -125,7 +132,7 @@ class DictSegment implements Comparable<DictSegment>{
 		//STEP1 在节点中查找keyChar对应的DictSegment
 		if(segmentArray != null){
 			//在数组中查找
-			DictSegment keySegment = new DictSegment(keyChar);
+			DictSegment keySegment = new DictSegment(keyChar, this.name);
 			int position = Arrays.binarySearch(segmentArray, 0 , this.storeSize , keySegment);
 			if(position >= 0){
 				ds = segmentArray[position];
@@ -225,7 +232,7 @@ class DictSegment implements Comparable<DictSegment>{
 			//获取数组容器，如果数组未创建则创建数组
 			DictSegment[] segmentArray = getChildrenArray();			
 			//搜寻数组
-			DictSegment keySegment = new DictSegment(keyChar);
+			DictSegment keySegment = new DictSegment(keyChar, this.name);
 			int position = Arrays.binarySearch(segmentArray, 0 , this.storeSize, keySegment);
 			if(position >= 0){
 				ds = segmentArray[position];
@@ -264,7 +271,7 @@ class DictSegment implements Comparable<DictSegment>{
 			ds = (DictSegment)segmentMap.get(keyChar);
 			if(ds == null && create == 1){
 				//构造新的segment
-				ds = new DictSegment(keyChar);
+				ds = new DictSegment(keyChar, this.name);
 				segmentMap.put(keyChar , ds);
 				//当前节点存储segment数目+1
 				this.storeSize ++;

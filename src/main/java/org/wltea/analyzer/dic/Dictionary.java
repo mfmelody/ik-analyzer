@@ -65,6 +65,10 @@ public class Dictionary {
 	 */
 	private Configuration cfg;
 	
+	private static final String QUANTIFIER_DICT = "quantifier";
+	
+	private static final String STOPWORDS_DICT = "stopwords";
+	
 	private Dictionary(Configuration cfg){
 		this.cfg = cfg;
 		this.loadDict();
@@ -200,13 +204,12 @@ public class Dictionary {
 		if(dictFiles == null){
 			throw new RuntimeException("Dictionary not found!!!");
 		} else {
-			int i = 0;
 			InputStream is = null;
-			for(String dictName : dictFiles){
+			for(String dictFile : dictFiles){
 				//读取扩展词典文件
-				DictSegment dictionary = new DictSegment((char)i);
-				System.out.println("加载词典：" + dictName);
-				is = this.getClass().getClassLoader().getResourceAsStream(dictName);
+				DictSegment dictionary = new DictSegment((char)0, this.getDictName(dictFile));
+				System.out.println("加载词典：" + dictFile);
+				is = this.getClass().getClassLoader().getResourceAsStream(dictFile);
 				//如果找不到扩展的字典，则忽略
 				if(is == null){
 					continue;
@@ -248,7 +251,7 @@ public class Dictionary {
 	 */
 	private void loadStopWordDict(){
 		//建立一个主词典实例
-		_StopWordDict = new DictSegment((char)0);
+		_StopWordDict = new DictSegment((char)0, STOPWORDS_DICT);
 		//加载扩展停止词典
 		List<String> stopWordDictFiles  = cfg.getStopWordDictionarys();
 		if(stopWordDictFiles != null){
@@ -296,7 +299,7 @@ public class Dictionary {
 	 */
 	private void loadQuantifierDict(){
 		//建立一个量词典实例
-		_QuantifierDict = new DictSegment((char)0);
+		_QuantifierDict = new DictSegment((char)0, QUANTIFIER_DICT);
 		//读取量词词典文件
         InputStream is = this.getClass().getClassLoader().getResourceAsStream(cfg.getQuantifierDicionary());
         if(is == null){
@@ -332,4 +335,11 @@ public class Dictionary {
 		return this._WordDict.size();
 	}
 	
+	private String getDictName(String dictFile) {
+		return dictFile.split("/")[dictFile.split("/").length - 1].split("\\.")[0];
+	}
+	
+	public String getDictNameByHit(Hit hit) {
+		return hit.getMatchedDictSegment().getName();
+	}
 }
