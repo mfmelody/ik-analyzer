@@ -3,10 +3,13 @@
 <properties>  
 	<comment>IK Analyzer 扩展配置</comment>
 	
-	<!--用户可以在这里配置自己的字典 -->
-	<entry key="dict">keyword.dic;</entry> 
+	<!--字典-->
+	<entry key="dict">dict/dict_1.dic;dict/dict_2.dic</entry> 
 	
-	<!--用户可以在这里配置自己的停止词字典-->
-	<entry key="stopwords_dict">stopword.dic;</entry> 
+	<!--停止词字典-->
+	<entry key="stopwords_dict">dict/stopword.dic;</entry> 
+	
+	<!--量词字典-->
+	<entry key="quantifier_dict">dict/quantifier.dic</entry> 
 	
 </properties>
