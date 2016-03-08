@@ -134,22 +134,24 @@ public class Dictionary {
 	}
 	
 	/**
-	 * 检索匹配主词典
+	 * 检索匹配词典
 	 * @param charArray
+	 * @param index
 	 * @return Hit 匹配结果描述
 	 */
-	public Hit matchInMainDict(char[] charArray, int index){
+	public Hit matchInDict(char[] charArray, int index){
 		return singleton._WordDict.get(index).match(charArray);
 	}
 	
 	/**
-	 * 检索匹配主词典
+	 * 检索匹配词典
 	 * @param charArray
 	 * @param begin
 	 * @param length
+	 * @param index
 	 * @return Hit 匹配结果描述
 	 */
-	public Hit matchInMainDict(char[] charArray , int begin, int length, int index){
+	public Hit matchInDict(char[] charArray , int begin, int length, int index){
 		return singleton._WordDict.get(index).match(charArray, begin, length);
 	}
 	
