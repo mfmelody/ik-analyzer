@@ -284,7 +284,7 @@ class AnalyzeContext {
 				}
 			}else{//pathMap中找不到index对应的LexemePath
 				//单字输出
-				this.outputSingleCJK(index);
+				//this.outputSingleCJK(index);
 				index++;
 			}
 		}
