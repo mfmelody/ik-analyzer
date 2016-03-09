@@ -13,13 +13,14 @@ public class IKAnalyzerTest extends BaseTokenStreamTestCase {
 
 	@Test
 	public void tokenizeSuccess() throws IOException {
-		String[] output = new String[] { "一下子", "一个月" };
+		String[] output = new String[] { "歌诗图", "雅阁" };
 		int[] startOff = new int[] { 0, 3 };
-		int[] endOff = new int[] { 3, 6 };
-		assertAnalyzesTo(analyzer, "一下子一个月", output, startOff, endOff);
+		int[] endOff = new int[] { 3, 5 };
+		String text = "歌诗图雅阁";
+		assertAnalyzesTo(analyzer, text, output, startOff, endOff);
 
-		String[] types = new String[] { "CN_WORD", "CN_WORD" };
-		TokenStream tokenStream = analyzer.tokenStream("", "一下子一个月");
+		String[] types = new String[] { "chexi", "chexi" };
+		TokenStream tokenStream = analyzer.tokenStream("", text);
 		assertTokenStreamContents(tokenStream, output, types);
 	}
 
