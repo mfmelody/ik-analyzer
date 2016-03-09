@@ -12,14 +12,18 @@ public class IKAnalyzerTest extends BaseTokenStreamTestCase {
 	private final Analyzer analyzer = new IKAnalyzer(true);
 
 	@Test
-	public void tokenizeSuccess() throws IOException {
-		String[] output = new String[] { "歌诗图", "雅阁" };
-		int[] startOff = new int[] { 0, 3 };
-		int[] endOff = new int[] { 3, 5 };
-		String text = "歌诗图雅阁";
+	public void testAnalyzer() throws IOException {
+		
+		String text = "2012年奥迪Q5奔驰GLES好看的宝马";	
+		
+		int[] startOff = new int[] {5, 7, 9, 11, 18};
+		int[] endOff = new int[] {7, 9, 11, 14, 20};
+		
+		String[] output = new String[] {"奥迪", "q5", "奔驰", "gle", "宝马"};
+		
 		assertAnalyzesTo(analyzer, text, output, startOff, endOff);
 
-		String[] types = new String[] { "chexi", "chexi" };
+		String[] types = new String[] {"brandname", "chexi", "brandname", "chexi", "brandname"};
 		TokenStream tokenStream = analyzer.tokenStream("", text);
 		assertTokenStreamContents(tokenStream, output, types);
 	}
