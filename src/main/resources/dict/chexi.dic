@@ -1,39 +1,25 @@
-﻿"name
 B7
 DS5
 DS 5LS
 DS4
 DS3
-Savana
 赛威
-Sierra
 西拉
-Acadia
 阿卡迪亚
-Envoy
 使节
-Canyon
 峡谷
-Yukon
 育空河
 切诺基
 Jeep2500
 城市猎人
 大切诺基
 Jeep2700
-Commander
 指挥官
-Compass
 指南者
-Grand Cherokee
 大切诺基
-Liberty
 自由人
-Wrangler
 牧马人
-Patriot
 自由客
-Cherokee
 自由光
 MG7
 MGTF
@@ -86,17 +72,11 @@ TT
 A1
 A7
 A2
-S-class
 S级
-SLK-class
 SLK级
-E-class
 E级
-GL-class
 GL级
-M-class
 M级
-CLS-class
 CLS级
 乐驰
 630
@@ -109,15 +89,10 @@ CLS级
 3系
 5系
 X1
-1 Series
 1系
-3 Series
 3系
-5 Series
 5系
-6 Series
 6系
-7 Series
 7系
 M3
 X3
@@ -125,21 +100,14 @@ X5
 X6
 Z4
 Z8
-4 Series
 4系
-2 Series
 2系
 i3
 911
-Boxster
 博克斯特
-Cayenne
 卡宴
-Cayman
 卡曼
-Panamera
 帕纳美拉
-Carrera GT
 卡雷拉 GT
 918
 Macan
@@ -160,71 +128,42 @@ GLK级
 威霆
 唯雅诺
 凌特
-Sprinter
 斯宾特
-Viano
 唯雅诺
-A-Class
 A级
-B-Class
 B级
-CL-Class
 CL级
-CLS-Class
 CLS级
 CLS AMG
-C-Class
 C级
-C-Class AMG
 C级 AMG
-E-Class
 E级
-E-Class AMG
 E级 AMG
-GL-Class
 GL级
-GLK-Class
 GLK级
-G-Class
 G级
-G-Class AMG
 G级 AMG
-M-Class
 M级
-M-Class AMG
 M级 AMG
-R-Class
 R级
-SL-Class
 SL级
-SL-Class AMG
 SL级 AMG
-SLK-Class
 SLK级
 SLK AMG
 SLS AMG
-S-Class
 S级
-S-Class AMG
 S级 AMG
-Vito
 威霆
-CLK-Class
 CLK级
-SLR-Class
 SLR级
 CL AMG
 CLK AMG
-R-Class AMG
 R级 AMG
 MB100
 GL AMG
-A-Class AMG
 A级 AMG
-CLA-Class
 CLA级
 CLA AMG
-Unimog
 乌尼莫克
 B70
 B50
@@ -242,32 +181,21 @@ CR-V
 歌诗图
 杰德
 凌派
-Stream
 时韵
-Legend
 里程
-Civic
 思域
 CR-Z
-Accord
 雅阁
-Crosstour
 歌诗图
-Insight
 音赛特
-Fit
 飞度
-Element
 元素
 FCX
 Passport
 Ridgeline
 S2000
-Odyssey
 奥德赛
-Pilot
 领航员
-Airwave
 气浪
 福莱尔
 F3
@@ -315,36 +243,23 @@ GL8
 林荫大道
 英朗
 昂科拉
-Enclave
 昂科雷
-Century
 世纪
 LeSabre
 Lucerne
 Rainier
 Terraza
-Regal
 君威
-Lacross
 君越
-Rendezvous
 朗迪
-Park Avenue
 林荫大道
-Royaum
 荣御
-Continental
 欧陆
-Mulsanne
 慕尚
-Arnage
 雅致
 Brooklands
-Azure
 雅骏
-Flying Spur
 飞驰
-Veyron
 威航
 爱迪尔
 福瑞达
@@ -366,13 +281,9 @@ GA3
 森雅
 V80
 G10
-Lanos
 蓝龙
-Nubira
 旅行家
-Leganza
 典雅
-Matiz
 马蒂兹
 捷达
 宝来
@@ -391,63 +302,37 @@ POLO
 朗行
 朗境
 Eos
-Golf
 高尔夫
-Magotan
 迈腾
-Beetle
 甲壳虫
-Passat
 帕萨特
-Phaeton
 辉腾
 R36
-Scirocco
 尚酷
-Sharan
 夏朗
-Multivan
 迈特威
-Tiguan
 途欢
-Touareg
 途锐
-POLO
 波罗
 FOX
-Jetta
 捷达
-Caddy
 开迪
-Caravelle
 卡罗瓦雷
-Caravelle
 凯路威
 凯领
-Durango
 拓远者
-Caliber
 酷博
-Journey
 酷威
-Avenger
 锋哲
-Caravan
 凯领
-Nitro
 翼龙
-Ram
 公羊
-Challenger
 挑战者
 Charger
 Dakota
 Magnum
-Stratus
 层云
-Viper
 蝰蛇
-Neon
 霓虹
 EC7
 EC8
@@ -494,38 +379,24 @@ FXX
 周末风
 派朗
 致悦
-Bravo
 博悦
-Punto
 朋多
-Linea
 领雅
-Stilo
 短剑
-Doblo
 多宝
-Multipla
 多能
-Freemont
 菲跃
 500
 Albea
 Idea
 Qubo
 Sedici
-Croma
 克罗玛
-Palio
 派力奥
-Stilo
 时尚
-Siena
 西耶那
-Barchetta
 小帆船
-Panda
 熊猫
-Weekend
 周末风
 柯斯达
 兰德酷路泽
@@ -543,61 +414,35 @@ RAV4
 雅力士
 汉兰达
 逸致
-Alphard
 埃尔法
-Camry
 佳美
-FJ Cruiser
 FJ酷路泽
-Highlander
 汉兰达
-Land Cruiser
 兰德酷路泽
-Land Cruiser Prado
 普拉多
-Previa
 普瑞维亚
-Sienna
 塞纳
-Tundra
 坦途
-Zelas
 杰路驰
-Sequoia
 红杉
-Hiace
 海狮
-Venza
 威飒
 4Runner
-Wish
 小霸王
 Aygo
-Mark X
 锐志
 Echo
 MR2
-Solara
 速乐娜
-Tacoma
 塔库玛
-Corolla
 花冠
-Crown
 皇冠
-Coaster
 考斯特
-Mega
 美佳
-Prius
 普锐斯
-Celica
 赛利卡
-Century
 世纪
-Yaris
 雅力士
-Avalon
 亚洲龙
 86
 菱智
@@ -620,57 +465,36 @@ A60
 翼虎
 翼搏
 致胜
-Edge
 爱虎
 E Class
-Escape/Kuga
 翼虎
-Edge
 锐界
-Explorer
 探索者
-Mustang
 野马
-F-150
 猛禽
-Diplomat
 外交官
 Flex
-Explorer
 探险者
-Taurus
 金牛座
-S-Max
 麦柯斯
-Kuga
 翼虎
 Ka
 Galaxy
-Freestar
 自由之星
-Econoline
 依克诺莱恩
-Explorer Sport Trac
 探索者皮卡
-Transit Connect
 全顺
-Mondeo
 蒙迪欧
 Fusion
 Freestyle
-Expedition
 征服者
 Everest
 C-Max
 Focus C-Max
 500
-Thunderbird
 雷鸟
-Fiesta
 嘉年华
-Focus
 福克斯
-Ford GT
 福特 GT
 蒙派克
 拓陆者
@@ -682,11 +506,8 @@ Ford GT
 富奇
 驭虎
 观致3
-Orochi
 大蛇
-Galue Convertible
 嘉路
-Himiko
 女王
 百利
 民意
@@ -726,7 +547,6 @@ S5
 H1
 H2
 H3
-Hummer Limousine
 悍马加长版
 黑豹
 旅行家
@@ -845,7 +665,6 @@ SRX
 CTS
 赛威SLS
 XTS
-Escalade
 凯雷德
 XLR
 DTS
@@ -853,7 +672,6 @@ Yokon
 Traverse
 BLS
 STS
-Deville
 帝威
 ATS
 CCXR
@@ -862,43 +680,25 @@ Agera
 铂锐
 大捷龙
 300
-Crossfire
 交叉火力
-Grand Voager
 大捷龙
-PT Cruiser
 PT漫步者
-Sebring
 赛百灵
 200
 Aspen
-Neon
 彩虹
-Concorde
 君王
-Pacifica
 太平洋
-Sundance
 太阳舞
-Aventador
 埃文塔多
-Murcielago
 蝙蝠
-Gallardo
 盖拉多
-Reventon
 雷文顿
-CLS-Class
 CLS级
-S-Class
 S级
-ML-Class
 ML级
-Ghost
 古思特
-Phantom
 幻影
-Wraith
 魅影
 ES
 GS
@@ -912,28 +712,18 @@ CT
 LF-A
 HS
 塔菲克
-Koleos
 科雷傲
-Laguna
 拉古娜
-Megane
 梅甘娜
-Scenic
 风景
-Fluence
 风朗
-Latitude
 纬度
-Talisman
 塔利斯曼
 Modus
-Kangoo
 甘果
 Clio
-Twingo
 丽人行
 Espace
-Vel satis
 威赛帝
 S1
 520
@@ -951,9 +741,7 @@ L3
 L5
 竞速
 竞悦
-Navigator
 领航员
-Towncar
 城市
 MKS
 MKT
@@ -975,11 +763,8 @@ Zephyr
 天语·尚悦
 昌铃王
 锋驭
-Grand Vitara
 超级维特拉
-Jimny
 吉姆尼
-Kizashi
 凯泽西
 Verona
 APV
@@ -987,12 +772,9 @@ Esteem
 Forenza
 Reno
 Splash
-Swift
 速翼特
 XL7
-Alto
 奥拓
-Aerio
 利亚纳
 SX4
 X9
@@ -1002,17 +784,11 @@ X6
 风华
 X8
 X5
-Defender
 卫士
-Discovery
 发现
-Freelander
 神行者
-Range Rover
 揽胜
-Esprit
 竞速
-Elite
 竞悦
 Elise
 Evora
@@ -1027,35 +803,27 @@ TF
 睿翼
 马自达8
 CX-5
-Mazda6
 马自达6
-Mazda8
 马自达8
 CX-7
 MX-5
 RX-8
-Mazda3
 马自达3
-Mazda5
 马自达5
 CX-9
-Mazda2
 马自达2
 MPV
 Tribute
 ATENZA
 Coupe
 GT
-Quattroporte
 总裁
 GranCabrio
 3200GT
 GranSport
 MC12
 Ghibli
-Maybach57
 迈巴赫57
-Maybach62
 迈巴赫62
 Exelero
 12C
@@ -1079,32 +847,22 @@ NSX
 RSX
 TSX
 RLX
-Antara
 安德拉
-Astra
 雅特
-Vectra
 威达
-Zafira
 赛飞利
 Combo
 GT
-Insignia
 音速亚
-Meriva
 麦瑞纳
 Signum
 Speedster
 Tigra
-Corsa
 可赛
-Agila
 欧捷利
-Omega
 欧美佳
 欧朗
 Zonda
-Trams-AM
 火鸟
 风云
 QQ
@@ -1136,39 +894,23 @@ M70
 K5
 K2
 K3
-Borrego
 霸锐
-Cadenza
 凯尊
-Carens
 佳乐
-Opirus
 欧菲莱斯
-Shuma
 速迈
-Sorento
 索兰托
-Sportage
 狮跑
-VQ
 威客
 cee’d
 Picanto
-Imperial
 帝国
-Forte
 福瑞迪
-Carnival
 嘉华
-Rio
 丽欧
-Optima
 欧迪玛
-Cerato
 赛拉图
-Visto
 维斯特
-Soul
 秀尔
 竞技者
 庆铃皮卡
@@ -1197,54 +939,35 @@ ZN6493多功能商务车
 帕拉骐
 凯普斯达
 NV200
-Cima
 西玛
 GT-R
-Murano
 楼兰
 350Z
-Civilian
 碧莲
-Patrol
 途乐
-Cefiro
 风度
-Fuga
 风雅
-Quest
 贵士
-X-Trail
 奇骏
 370Z
 Almera
 Armada
 Cube
 Frontier
-March
 玛驰
 Micra
 Pulsar
-Rogue
 奇骏
-Sentra
 阳光
 Silvia
-Altima
 奥蒂玛
 Titan
-Cedric
 公爵王
-Urvan
 佳奔
-Bluebird
 蓝鸟
-Maxima
 马克西马
-Paladin
 帕拉丁
-Tiida
 骐达
-Pathfinder
 寻路者
 750
 550
@@ -1272,24 +995,16 @@ G3
 君阁
 翼神
 风迪思
-Eclipse
 伊柯丽斯
-Grandis
 格蓝迪
-Lancer Evolution
 蓝瑟 翼豪陆神
-Lancer
 蓝瑟
-Outland
 欧蓝德
-Pajero
 帕杰罗
-ASX
 劲炫
 Diamante
 Endeavor
 Maven
-Galant
 戈蓝
 龙锐
 福家
@@ -1300,28 +1015,17 @@ C8
 来宝
 SCEO
 小贵族
-Actyon
 爱腾
-Kyron
 享御
-Chairman
 主席
-Rexton
 雷斯特
-Rodius
 路帝
-Korando
 柯兰多
 思铭
-Forester
 森林人
-Impreza
 翼豹
-Legacy
 力狮
-Outback
 傲虎
-Tribeca
 驰鹏
 XV
 Dex
@@ -1332,7 +1036,6 @@ Pleo
 R1
 R2
 Sambar
-Setlla
 斯特拉
 BRZ
 明锐
@@ -1342,14 +1045,10 @@ BRZ
 速派
 野帝
 昕动
-Fabia
 晶锐
-Octavia
 明锐
-Superb
 速派
 Roomster
-Yeti
 野帝
 Model S
 腾势
@@ -1397,9 +1096,7 @@ PN系列货车
 宏光
 西安奥拓
 Leon
-Ibiza
 伊比飒
-Alhambra
 欧悦搏
 夏利
 雅酷
@@ -1416,29 +1113,17 @@ i30
 胜达
 名图
 瑞奕
-Azera
 雅尊
-Coupe
 酷派
-Dynasty
 王朝
-Equus
 雅科仕
-H-1
 辉翼
-Matrix
 美佳
-Santa Fe
 胜达
-Rohens
 劳恩斯
-Santa Fe
 圣达菲
-Veracrus
 维拉克斯
-Grandeur
 君爵
-Veloster
 飞思
 Atos
 Entourage
@@ -1447,21 +1132,13 @@ i10
 i20
 i45
 i800
-Trajet
 特杰
-Centennial
 世纪百年
-Sonata
 索纳塔
-Terracan
 特拉卡
-Tucson
 途胜
-Accent
 雅绅特
-Elantra
 伊兰特
-Grand SantaFe
 格锐
 新凯之星
 新凯靓星
@@ -1481,52 +1158,31 @@ Grand SantaFe
 迈锐宝
 开拓者
 创酷
-Captive
 科帕奇
 Express
-Spark
 斯帕可
-Camaro
 科迈罗
-Corvette
 克尔维特
 Traverse
-Volt
 沃蓝达
-Cavalier
 骑士
 HHR
-Malibu
 迈锐宝
-Rezzo
 雷佐
 Suburban
 Uplander
-Equinox
 春分
-Tahoe
 豪放
-Epica
 景程
-Cobalt
 科宝
-Cruze
 科鲁兹
-Aveo
 乐骋
-Spark
 乐驰
-Lumina
 鲁米娜
-Monte Carlo
 蒙特卡洛
-Trailblazer
 全能先锋
-Avalanche
 雪崩
-Impala
 英帕拉
-Tracker
 追踪者
 世嘉
 C2
@@ -1539,7 +1195,6 @@ C4
 C5
 C3
 C6
-Picasso
 毕加索
 C1
 C8
@@ -1743,7 +1398,6 @@ GX7
 云100
 H6C
 H6V
-GLA-Class
 GLA级
 骏派
 GP150
@@ -1795,15 +1449,12 @@ Z500
 乐驰
 Terrain
 up!
-Discovery Sport
 发现神行
-GLA-AMG
 GLA级 AMG
 625C
 TLX
 RC
 NX
-Genesis
 捷恩斯
 凌渡
 T70
@@ -1813,7 +1464,6 @@ K50
 H2
 GX3
 5-Door
-MAYBACK S-Class
 迈巴赫S级
 金麒麟
 揽胜
@@ -1822,9 +1472,7 @@ MAYBACK S-Class
 T32
 T30
 T70
-Trooper
 突路霸
-Xantia
 桑蒂雅
 405
 雄师
@@ -1837,11 +1485,8 @@ X65
 EV160
 华颂7
 L60
-Scorpio
 天蝎座
-Escort
 护卫者
-Felicia
 弗雷西亚
 100
 80
@@ -1869,26 +1514,19 @@ M6
 M4
 M5
 M6
-8 Series
 8系
 AMG GT
 V3
 007
 熊猫
 Jimmy
-Safari
 旅行
-Roadmaster
 路霸
 9000
 900
-Blazer
 开拓者
-Prizm
 普林斯
-Tivolan
 蒂维拉
-Captur
 卡缤
 唐
 820
@@ -1927,12 +1565,10 @@ M30
 EX80
 626
 Millenia
-Cherokee
 切诺基
 Supra
 GLE
 GLE AMG
-Bentayga
 添越
 宋
 撼路者
@@ -1948,11 +1584,8 @@ GLC级
 EU260
 瑞迈
 维特拉
-Range Rover Sport
 揽胜运动版
-Range Rover Evoque
 揽胜极光
-Savana
 商务之星
 300
 揽胜极光
