@@ -47,4 +47,16 @@
 			<version>${log4j.version}</version>
 		</dependency>
     </dependencies>
+    <distributionManagement>
+    	<repository>
+			<id>deployRelease</id>
+			<name>Nexus Repository</name>
+			<url>http://ops.365eche.com/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deploySnapshot</id>
+			<name>Nexus Repository</name>
+			<url>http://ops.365eche.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
