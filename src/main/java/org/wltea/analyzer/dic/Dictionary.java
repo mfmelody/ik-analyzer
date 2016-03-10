@@ -33,13 +33,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.wltea.analyzer.cfg.Configuration;
 
 /**
  * 词典管理类,单子模式
  */
 public class Dictionary {
-
+	
+	public static Logger logger = LogManager.getLogger();
 
 	/*
 	 * 词典单子实例
@@ -208,7 +211,7 @@ public class Dictionary {
 			for(String dictFile : dictFiles){
 				//读取扩展词典文件
 				DictSegment dictionary = new DictSegment((char)0, this.getDictName(dictFile));
-				System.out.println("加载词典：" + dictFile);
+				logger.info(String.format("load segment dictionary:%s", dictFile));
 				is = this.getClass().getClassLoader().getResourceAsStream(dictFile);
 				//如果找不到扩展的字典，则忽略
 				if(is == null){
@@ -228,10 +231,8 @@ public class Dictionary {
 					
 					this._WordDict.add(dictionary);
 					
-				} catch (IOException ioe) {
-					System.err.println("Extension Dictionary loading exception.");
-					ioe.printStackTrace();
-					
+				} catch (IOException e) {
+					logger.error("Dictionary Loading Exception:", e);
 				}finally{
 					try {
 						if(is != null){
@@ -239,7 +240,7 @@ public class Dictionary {
 		                    is = null;
 						}
 					} catch (IOException e) {
-						e.printStackTrace();
+						logger.error(e);
 					}
 				}
 			}
@@ -257,7 +258,7 @@ public class Dictionary {
 		if(stopWordDictFiles != null){
 			InputStream is = null;
 			for(String stopWordDictName : stopWordDictFiles){
-				System.out.println("加载停止词典：" + stopWordDictName);
+				logger.info(String.format("load stopwords dictionary:%s", stopWordDictName));
 				//读取扩展词典文件
 				is = this.getClass().getClassLoader().getResourceAsStream(stopWordDictName);
 				//如果找不到扩展的字典，则忽略
@@ -276,10 +277,8 @@ public class Dictionary {
 						}
 					} while (theWord != null);
 					
-				} catch (IOException ioe) {
-					System.err.println("Extension Stop word Dictionary loading exception.");
-					ioe.printStackTrace();
-					
+				} catch (IOException e) {
+					logger.error(String.format("Stopword Dictionary Loading Exception:", e));			
 				}finally{
 					try {
 						if(is != null){
@@ -287,7 +286,7 @@ public class Dictionary {
 		                    is = null;
 						}
 					} catch (IOException e) {
-						e.printStackTrace();
+						logger.error(e);
 					}
 				}
 			}
@@ -315,10 +314,8 @@ public class Dictionary {
 				}
 			} while (theWord != null);
 			
-		} catch (IOException ioe) {
-			System.err.println("Quantifier Dictionary loading exception.");
-			ioe.printStackTrace();
-			
+		} catch (IOException e) {
+			logger.error(String.format("Quantifier Dictionary Loading Exception:", e));
 		}finally{
 			try {
 				if(is != null){
@@ -326,7 +323,7 @@ public class Dictionary {
                     is = null;
 				}
 			} catch (IOException e) {
-				e.printStackTrace();
+				logger.error(e);
 			}
 		}
 	}
