@@ -4,7 +4,7 @@
 	<comment>IK Analyzer 扩展配置</comment>
 	
 	<!--字典-->
-	<entry key="dict">dict/chexi.dic;dict/brandname.dic;</entry> 
+	<entry key="dict">dict/alias.dic;dict/brandname.dic;</entry> 
 	
 	<!--停止词字典-->
 	<entry key="stopwords_dict">dict/stopword.dic;</entry> 
